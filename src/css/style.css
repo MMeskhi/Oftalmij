@@ -39,12 +39,17 @@ img {
 header {
     padding: 48px 0 48px 0;
     line-height: 0;
+    white-space: nowrap;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.navbar img:hover {
+    opacity: 0.8;
 }
 
 .navbar .nav-right {
@@ -65,10 +70,15 @@ header {
     margin: 0px 16px 0 16px;
 }
 
-.navbar .nav-left span {
+.nav-left span {
     font-size: 16px;
     color: #325454;
     cursor: default;
+    transition: all 0.9s ease-in-out;
+}
+
+.nav-left:hover span {
+    color: #299BAF
 }
 
 .navbar .nav-right ul {
@@ -76,14 +86,7 @@ header {
     background-color: rgb(41, 155, 175, 0.05);
     border-radius: 22.5px;
     padding-left: 24px;
-}
-
-.nav-right ul li:not(:last-child) {
-    margin-right: 58px;
-}
-
-.nav-right ul li:not(:last-child) {
-    margin-right: 58px;
+    gap: 58px;
 }
 
 .nav-right ul li a:hover {
@@ -203,7 +206,7 @@ header {
 .abt .heading,
 .glr .heading {
     display: flex;
-    font-size: 40px;
+    font-size: 26px;
     margin-bottom: 40px;
 }
 
@@ -256,14 +259,12 @@ header {
 
 .abt .sect-bg {
     background-image: url(../img/abt-img.png);
-    max-width: 951px;
     width: 50%;
     height: 710px;
 }
 
 .glr .sect-bg {
     background-image: url(../img/glr-img.png);
-    max-width: 969px;
     width: 50%;
     height: 712px;
 }
@@ -291,10 +292,7 @@ footer hr {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.footer-cont .footer-menu li:not(:last-child) {
-    margin-right: 32px;
+    gap: 35px;
 }
 
 .footer-cont .footer-menu li a:hover {
