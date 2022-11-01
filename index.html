@@ -27,26 +27,74 @@
 <body id="main">
     <header>
         <nav class="navbar container">
+            <div class="bg-white"></div>
             <div class="nav-left">
                 <a href="index.html">
                     <img src="src/img/logo-1.svg" alt="Oftalmij">
                 </a>
                 <div class="vl"></div>
                 <span>ჯავრიშვილის კლინიკა</span>
+                <button class="hamburger">
+                    <img src="src/img/menu.svg" alt="Menu">
+                </button>
             </div>
             <div class="nav-right">
                 <ul class="menu">
-                    <li><a href="index.html">მთავარი</a></li>
-                    <li><a href="#">ჩვენ შესახებ</a></li>
-                    <li><a href="#">სერვისი</a></li>
-                    <li><a href="#">კონტაქტი</a></li>
-                    <li class="art-gal"><a href="#">არტ გალერეა</a></li>
+                    <li><a href="index.html" class="main">მთავარი</a></li>
+                    <li>
+                        <a href="#">ჩვენ შესახებ</a>
+                        <div class="dropdown inactive">
+                            <a href="#">კლინიკის ისტორია</a>
+                            <hr>
+                            <a href="#">ფილიალები</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">სერვისი</a>
+                        <div class="dropdown inactive">
+                            <a href="#">თერაპია</a>
+                            <hr>
+                            <a href="#">ლაზეროქირურგია</a>
+                            <hr>
+                            <a href="#">ოფთალმოპედიატრია</a>
+                            <hr>
+                            <a href="#">ქირურგიული მკურნალობა</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">კონტაქტი</a>
+                        <div class="dropdown inactive">
+                            <a href="#">ფოტო გალერეა</a>
+                            <hr>
+                            <a href="#">მედია ჩვენზე</a>
+                        </div>
+                    </li>
+                    <li class="art-gal">
+                        <a href="#">არტ გალერეა</a>
+                        <div class="dropdown inactive">
+                            <a href="#">არტ გალერიის კონცეფცია</a>
+                            <hr>
+                            <a href="#">მიმდინარე გამოფენები</a>
+                            <hr>
+                            <a href="#">დაგეგმილი ღონისძიებები</a>
+                        </div>
+                    </li>
                 </ul>
                 <div class="lang-swt">
                     <span>GEO</span>
                 </div>
             </div>
         </nav>
+
+        <div class="mobile-sidebar">
+            <ul class="mobile-menu">
+                <li><a href="" class="main">მთავარი</a></li>
+                <li><a href="">ჩვენ შესახებ</a></li>
+                <li><a href="">სერვისი</a></li>
+                <li><a href="">კონტაქტი</a></li>
+                <li class="mobile-artglr"><a href="">არტ გალერეა</a></li>
+            </ul>
+        </div>
     </header>
 
     <div class="main">
@@ -95,10 +143,10 @@
                 <p>კლინიკის დაარსებას წინ უძღოდა რამდენიმე საინტერესო მოვლენა. 1987 წელს გიორგი ჯავრიშვილი იწყებს
                     ორდინატურის 2 წლიან კურსს მოსკოვის ფიოდოროვის სახელობის თვალის მიკროქირურგიის კომპლექსში.</p>
             </div>
-            <div class="text-more">
+            <a href="#" class="text-more">
                 <span>ვრცლად</span>
                 <img src="src/img/arrow.svg" alt="">
-            </div>
+            </a>
         </div>
         <div class="sect-bg"></div>
     </section>
@@ -118,10 +166,10 @@
                 <p>კლინიკის დაარსებას წინ უძღოდა რამდენიმე საინტერესო მოვლენა. 1987 წელს გიორგი ჯავრიშვილი იწყებს
                     ორდინატურის 2 წლიან კურსს მოსკოვის ფიოდოროვის სახელობის თვალის მიკროქირურგიის კომპლექსში.</p>
             </div>
-            <div class="text-more">
+            <a href="#" class="text-more">
                 <span>ვრცლად</span>
                 <img src="src/img/arrow.svg" alt="">
-            </div>
+            </a>
         </div>
     </section>
 
@@ -133,13 +181,17 @@
                 <span>თბილისი, მ.ჭიაურელი ქუჩა #14</span>
             </div>
             <ul class="footer-menu">
-                <li><a href="index.html">მთავარი</a></li>
+                <li><a href="index.html" class="main">მთავარი</a></li>
                 <li><a href="#">ჩვენს შესახებ</a></li>
                 <li><a href="#">სერვისი</a></li>
                 <li><a href="#">მულტიმედია</a></li>
                 <li><a href="#">კონტაქტი</a></li>
                 <li><a href="#">არტ გალერეა</a></li>
             </ul>
+            <div class="loc b">
+                <img src="src/img/location.svg" alt="">
+                <span>თბილისი, მ.ჭიაურელი ქუჩა #14</span>
+            </div>
             <div class="cnt">
                 <img src="src/img/phone.svg" alt="">
                 <a href="tel:2 133 133">2 133 133</a>
