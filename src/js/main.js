@@ -15,13 +15,11 @@ menuAnchor.forEach((btn) => {
 //Mobile sidebar
 const mobileHamburger = document.querySelector(".hamburger");
 const sidebar = document.querySelector(".mobile-sidebar");
-const navbar = document.querySelector(".nav-left");
 const noScroll = document.querySelector("body");
 const sidebarMenu = document.querySelector(".mobile-menu");
 
 function openSidebar() {
   sidebar.classList.toggle("sidebar-active");
-  navbar.classList.toggle("bgcolor-active");
   noScroll.classList.toggle("no-scroll");
   sidebarMenu.classList.toggle("active");
 }

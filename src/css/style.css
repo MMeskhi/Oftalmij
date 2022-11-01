@@ -287,10 +287,6 @@ header .sidebar-active {
     width: 70%;
 }
 
-.navbar .bgcolor-active {
-    background-color: #F4FAFB !important;
-}
-
 .no-scroll {
     overflow: hidden;
 }
