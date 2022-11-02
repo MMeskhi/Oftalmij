@@ -110,7 +110,7 @@
         transition: all 0ms ease;
     }
 
-    .main {
+    .main-section {
         margin-top: 124px;
     }
 
@@ -146,10 +146,19 @@
     .navbar {
         justify-content: center;
     }
+
+    .section-head {
+        margin-top: 124px;
+    }
+
+    .history-top, .history-bottom {
+        flex-direction: column;
+        gap: 40px;
+    }
 }
 
 @media all and (max-width: 700px) {
-    .main .main-bg {
+    .main-section .main-bg {
         height: 225px;
     }
 
@@ -198,6 +207,7 @@
 
     .footer-cont .footer-menu .main {
         border-top: unset;
+        color: #299BAF;
     }
 
     .footer-cont .footer-menu li a {
@@ -226,5 +236,13 @@
     .abt .sect-bg,
     .glr .sect-bg {
         height: 217px;
+    }
+
+    .section-head {
+        display: none;
+    }
+
+    .history-top {
+        margin-top: 80px;
     }
 }
