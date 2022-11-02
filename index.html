@@ -34,8 +34,9 @@
                 </a>
                 <div class="vl"></div>
                 <span>ჯავრიშვილის კლინიკა</span>
-                <button class="hamburger">
-                    <img src="src/img/menu.svg" alt="Menu">
+                <button class="hamburger" id="mobileHamburger">
+                    <img src="src/img/menu.svg" alt="Menu" class="menu-open switch-btn">
+                    <img src="src/img/x.svg" alt="Close" class="menu-close">
                 </button>
             </div>
             <div class="nav-right">
@@ -43,7 +44,7 @@
                     <li><a href="index.html" class="main">მთავარი</a></li>
                     <li>
                         <a href="#">ჩვენ შესახებ</a>
-                        <div class="dropdown inactive">
+                        <div class="dropdown">
                             <a href="#">კლინიკის ისტორია</a>
                             <hr>
                             <a href="#">ფილიალები</a>
@@ -51,7 +52,7 @@
                     </li>
                     <li>
                         <a href="#">სერვისი</a>
-                        <div class="dropdown inactive">
+                        <div class="dropdown">
                             <a href="#">თერაპია</a>
                             <hr>
                             <a href="#">ლაზეროქირურგია</a>
@@ -63,7 +64,7 @@
                     </li>
                     <li>
                         <a href="#">კონტაქტი</a>
-                        <div class="dropdown inactive">
+                        <div class="dropdown">
                             <a href="#">ფოტო გალერეა</a>
                             <hr>
                             <a href="#">მედია ჩვენზე</a>
@@ -71,7 +72,7 @@
                     </li>
                     <li class="art-gal">
                         <a href="#">არტ გალერეა</a>
-                        <div class="dropdown inactive">
+                        <div class="dropdown">
                             <a href="#">არტ გალერიის კონცეფცია</a>
                             <hr>
                             <a href="#">მიმდინარე გამოფენები</a>
@@ -80,19 +81,52 @@
                         </div>
                     </li>
                 </ul>
-                <div class="lang-swt">
-                    <span>GEO</span>
-                </div>
+                <button class="lang-swt">
+                    <a href="#">GEO</a>
+                    <div class="lang-swt-drp">
+                        <a href="#">ENG</a>
+                        <a href="#">RUS</a>
+                    </div>
+                </button>
             </div>
         </nav>
 
-        <div class="mobile-sidebar">
+        <div class="mobile-sidebar" id="sidebar">
             <ul class="mobile-menu">
-                <li><a href="" class="main">მთავარი</a></li>
-                <li><a href="">ჩვენ შესახებ</a></li>
-                <li><a href="">სერვისი</a></li>
-                <li><a href="">კონტაქტი</a></li>
-                <li class="mobile-artglr"><a href="">არტ გალერეა</a></li>
+                <li>
+                    <a href="" class="main">მთავარი</a>
+                </li>
+                <li class="mobile-cat">
+                    <a>ჩვენ შესახებ</a>
+                    <div class="mobile-menu-dropdown">
+                        <a href="#">კლინიკის ისტორია</a>
+                        <a href="#">ფილიალები</a>
+                    </div>
+                </li>
+                <li class="mobile-cat">
+                    <a>სერვისი</a>
+                    <div class="mobile-menu-dropdown">
+                        <a href="#">თერაპია</a>
+                        <a href="#">ლაზეროქირურგია</a>
+                        <a href="#">ოფთალმოპედიატრია</a>
+                        <a href="#">ქირურგიული მკურნალობა</a>
+                    </div>
+                </li>
+                <li class="mobile-cat">
+                    <a>კონტაქტი</a>
+                    <div class="mobile-menu-dropdown">
+                        <a href="#">ფოტო გალერეა</a>
+                        <a href="#">მედია ჩვენზე</a>
+                    </div>
+                </li>
+                <li class="mobile-cat mobile-artglr">
+                    <a>არტ გალერეა</a>
+                    <div class="mobile-menu-dropdown">
+                        <a href="#">არტ გალერიის კონცეფცია</a>
+                        <a href="#">მიმდინარე გამოფენები</a>
+                        <a href="#">დაგეგმილი ღონისძიებები</a>
+                    </div>
+                </li>
             </ul>
         </div>
     </header>
