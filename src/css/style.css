@@ -860,3 +860,114 @@ footer .footer-bottom span {
 
 
 /* Therapy page */
+.therapy-cont {
+    display: flex;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+.therapy-left {
+    max-width: 681px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.therapy-right {
+    max-width: 951px;
+    width: 100%;
+}
+
+.therapy-bg {
+    max-width: 951px;
+    width: 100%;
+    height: 605px;
+    background-image: url(../img/Rectangle-56.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Contact page */
+.contact h4 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.contact-formfield h5 {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.contact-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-formfield {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form-sizes {
+    width: 346px;
+    height: 44px;
+}
+
+.form-sizes input {
+    width: 100%;
+    height: 100%;
+    padding-left: 14px;
+}
+
+.message-field {
+    width: 346px;
+    height: 131px;
+}
+
+input {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    outline: none;
+}
+
+input:focus {
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.message-field input {
+    width: 100%;
+    height: 100%;
+    padding: 0 0 80px 14px;
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 13px;
+}
+
+.contact-send button {
+    cursor: pointer;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    background: #299BAF;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    display: flex;
+    width: 346px;
+    height: 44px;
+}
+
+.contact-send button:hover {
+    opacity: 90%;
+}
