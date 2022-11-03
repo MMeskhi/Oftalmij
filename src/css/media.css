@@ -50,6 +50,14 @@
     .main-sect-cont .main-sect img {
         height: auto;
     }
+
+    .branches-cont {
+        flex-direction: column-reverse;
+    }
+
+    .branches-right {
+        margin-top: 60px;
+    }
 }
 
 @media all and (max-width: 1024px) {
@@ -213,6 +221,10 @@
     .footer-cont .footer-menu li a {
         border-top: unset;
     }
+
+    .branches-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media all and (max-width: 480px) {
@@ -244,5 +256,21 @@
 
     .history-top {
         margin-top: 80px;
+    }
+
+    .branches h4 {
+        margin: 80px 0 20px 0;
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.9);
+    }
+
+    .branches-right {
+        margin-top: -20px;
+    }
+
+    .branches h4 {
+        margin: 80px 0 0 0;
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.9);
     }
 }
