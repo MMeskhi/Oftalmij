@@ -47,7 +47,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 48px;
+    height: 76px;
 }
 
 .navbar img:hover {
@@ -277,11 +277,11 @@ header {
 
     position: fixed;
     right: 0;
-    top: 48px;
+    top: 0;
 }
 
 .mobile-sidebar .mobile-menu {
-    margin: 100px 0 0 0;
+    margin: 150px 0 0 0;
     width: 100%;
     display: none;
 }
@@ -323,7 +323,7 @@ header {
 }
 
 header .sidebar-active {
-    width: 70% !important;
+    width: 100% !important;
 }
 
 .no-scroll {
@@ -363,6 +363,10 @@ header .sidebar-active {
     opacity: 0;
     visibility: hidden;
     z-index: -1;
+
+    transition: all 0.3s ease, visibility 5ms, opacity 0s;
+    -webkit-transition: all 0.3s ease, visibility 5ms, opacity 0s;
+    -ms-transition: all 0.3s ease, visibility 5ms, opacity 0s;
 }
 
 .mobile-menu-dropdown a {
@@ -381,9 +385,56 @@ header .sidebar-active {
     opacity: 1;
     visibility: visible;
     z-index: 0;
+
     transition: all 0.3s ease, visibility 5ms, opacity 0s;
     -webkit-transition: all 0.3s ease, visibility 5ms, opacity 0s;
     -ms-transition: all 0.3s ease, visibility 5ms, opacity 0s;
+}
+
+.mobile-lang-switcher {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 32px 20px 0 0;
+    gap: 12px;
+}
+
+.mobile-lang-switcher .lang-swt {
+    border: none;
+    width: 37px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.05s ease;
+}
+
+.mobile-lang-switcher .lang-swt a {
+    color: rgba(51, 76, 101, 0.6);
+}
+
+.mobile-lang-switcher .lang-swt:hover {
+    width: 46px;
+    height: 45px;
+    font-size: 14px;
+}
+
+.mobile-lang-switcher .lang-swt:hover a {
+    color: rgba(51, 76, 101, 0.9);
+}
+
+.mobile-lang-switcher .active {
+    width: 46px;
+    height: 45px;
+    font-size: 14px;
+}
+
+.mobile-lang-switcher .active a {
+    color: rgba(51, 76, 101, 0.9);
+    font-weight: 500;
 }
 
 
@@ -806,3 +857,6 @@ footer .footer-bottom span {
     background-position: center;
     background-size: contain;
 }
+
+
+/* Therapy page */

@@ -41,4 +41,18 @@ function openLangSwitcher() {
 
 langSwitch.addEventListener("click", openLangSwitcher);
 
-//Click outside of mobile sidebar and lang switcher
+//Click outside of lang switcher to close
+document.addEventListener("click", (event) => {
+  const isClickInside = langSwitch.contains(event.target);
+
+  if (!isClickInside) {
+    isLangSwitcherOpen();
+  }
+});
+
+function isLangSwitcherOpen() {
+  if (langSwitch.classList.contains("lang-active")) {
+    openLangSwitcher();
+  }
+  return;
+}
