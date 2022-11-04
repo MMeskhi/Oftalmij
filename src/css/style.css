@@ -983,10 +983,16 @@ footer .footer-bottom span {
     margin-top: 48px;
 }
 
-.laser,
-.opthal,
-.surgical {
+.laser {
     margin-bottom: 360px;
+}
+
+.opthal {
+    margin-bottom: 174px;
+}
+
+.surgical {
+    margin-bottom: 240px;
 }
 
 .opthal .opthal-column {
