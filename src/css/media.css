@@ -15,6 +15,30 @@
     footer .footer-cont .b {
         display: block;
     }
+
+    .service-right {
+        max-width: 951px;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .service-left {
+        width: 40%;
+    }
+
+    .therapy-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .therapy-grid .tpy-in:nth-of-type(2) {
+        margin-left: -64px;
+    }
+
+    .therapy-grid .tpy-in:nth-of-type(4) {
+        margin-left: -144px;
+    }
 }
 
 @media all and (max-width: 1225px) {
@@ -164,6 +188,74 @@
         flex-direction: column;
         gap: 40px;
     }
+
+    .contact-cont {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 80px
+    }
+
+    .contact-cont .contact-location {
+        margin-top: 2px;
+        max-width: none;
+    }
+
+    .contact-box,
+    .contact-formfield,
+    .form-sizes,
+    .message-field,
+    .contact-send button {
+        width: 88%;
+    }
+
+    .service-cont {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 32px;
+        max-width: none;
+        width: 100%;
+    }
+
+    .service-right {
+        max-width: none;
+        width: 100%;
+        position: static;
+    }
+
+    .service-left {
+        padding: 0 20px 0 20px;
+        width: 100%;
+    }
+
+    .service-bg {
+        max-width: none;
+    }
+
+    .service-headline {
+        display: none;
+    }
+
+    .service-headline-mobile {
+        display: block;
+    }
+
+    .therapy-grid .tpy-in:nth-of-type(2) {
+        margin-left: -128px;
+    }
+
+    .therapy-grid .tpy-in:nth-of-type(4) {
+        margin-left: -208px;
+    }
+
+    .therapy-grid .tpy-in:nth-of-type(6) {
+        margin-left: -64px;
+    }
+
+    .laser,
+    .opthal,
+    .surgical {
+        margin-bottom: 0;
+    }
 }
 
 @media all and (max-width: 700px) {
@@ -182,6 +274,10 @@
 
     .abt-cont, .glr-cont {
         width: 100%;
+    }
+
+    footer {
+        margin-top: 80px;
     }
 
     .footer-cont {
@@ -225,6 +321,28 @@
 
     .branches-grid {
         grid-template-columns: 1fr;
+    }
+
+    .contact-cont {
+        align-items: flex-start;
+        gap: 32px;
+    }
+
+    .therapy-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .therapy-grid .tpy-in:nth-of-type(2) {
+        margin-left: 0;
+    }
+
+    .therapy-grid .tpy-in:nth-of-type(4) {
+        margin-left: 0;
+    }
+
+    .therapy-grid .tpy-in:nth-of-type(6) {
+        margin-left: 0;
     }
 }
 
@@ -273,5 +391,34 @@
         margin: 80px 0 0 0;
         font-size: 20px;
         color: rgba(0, 0, 0, 0.9);
+    }
+
+    .contact-cont .contact-location {
+        height: 338px;
+    }
+
+    .contact-box,
+    .contact-formfield,
+    .form-sizes,
+    .message-field,
+    .contact-send button {
+        width: 100%;
+    }
+
+    .service-cont {
+        margin-top: 8px;
+    }
+
+    .service-right {
+        height: 199px;
+    }
+
+    .service-bg {
+        height: 199px;
+    }
+
+    .therapy-grid .tpy-in span,
+    .tpy-out span {
+        font-size: 13px;
     }
 }

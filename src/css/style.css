@@ -298,10 +298,6 @@ header {
     align-items: flex-end;
 }
 
-.mobile-sidebar .mobile-menu li:not(:first-child) {
-    cursor: pointer;
-}
-
 .mobile-sidebar .mobile-menu li a {
     margin: 16px 20px 16px 0;
 }
@@ -570,7 +566,7 @@ header .sidebar-active {
 
 /* Footer */
 footer {
-    margin-top: 80px;
+    margin-top: 160px;
 }
 
 footer hr {
@@ -859,39 +855,171 @@ footer .footer-bottom span {
 }
 
 
-/* Therapy page */
-.therapy-cont {
-    display: flex;
-    justify-content: space-between;
-    gap: 45px;
+/* Service pages */
+.service h4 {
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 48px;
 }
 
-.therapy-left {
+.service-relative {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.service-left {
     max-width: 681px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
     margin-top: 32px;
 }
 
-.therapy-right {
-    max-width: 951px;
+.service-left h5 {
+    font-weight: normal;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+.service-left p {
+    font-weight: 400;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.7);
+    max-width: 589px;
     width: 100%;
 }
 
+.therapy-grid-cont {
+    margin-top: 48px;
+}
+
+.therapy-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: row;
+    gap: 16px;
+}
+
+.therapy-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.therapy-grid .tpy-in {
+    background: #F5F5F5;
+    border-radius: 190px;
+    display: flex;
+    padding: 16px 28px 16px 28px;
+    align-items: center;
+    height: 53px;
+    width: fit-content;
+}
+
+.tpy-out {
+    background: #F5F5F5;
+    border-radius: 190px;
+    display: flex;
+    padding: 16px 28px 16px 28px;
+    align-items: center;
+    height: 53px;
+    min-height: 68px;
+    width: fit-content;
+}
+
+.therapy-grid .tpy-in span,
+.tpy-out span {
+    font-weight: 400;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.service-right {
+    max-width: 951px;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .therapy-bg {
+    background-image: url(../img/Rectangle-56.png);
+}
+
+.laser-bg {
+    background-image: url(../img/Rectangle-57.png);
+}
+
+.opthal-bg {
+    background-image: url(../img/Rectangle-58.png);
+}
+
+.surgical-bg {
+    background-image: url(../img/Rectangle-59.png);
+}
+
+.service-bg {
     max-width: 951px;
     width: 100%;
     height: 605px;
-    background-image: url(../img/Rectangle-56.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
+.service-headline-mobile {
+    margin-top: 0 !important;
+    margin-bottom: 32px;
+    display: none;
+}
+
+.service-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 48px;
+}
+
+.laser,
+.opthal,
+.surgical {
+    margin-bottom: 360px;
+}
+
+.opthal .opthal-column {
+    margin-bottom: 32px;
+}
+
+.opthal h6 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 40px 0 16px 0;
+}
 
 /* Contact page */
+.contact-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 160px;
+}
+
+.contact-cont .contact-location {
+    margin-top: -112px;
+    max-width: 711px;
+    width: 100%;
+    height: 637px;
+}
+
+.contact-cont iframe {
+    border-radius: 8px;
+}
+
 .contact h4 {
     font-size: 20px;
     font-weight: normal;
