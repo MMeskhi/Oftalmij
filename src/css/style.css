@@ -152,13 +152,6 @@ header {
     left: -25px;
 }
 
-.nav-right .menu li:nth-of-type(4) .dropdown {
-    width: 163px;
-    height: 92px;
-    background-color: #F4FAFB;
-    left: -25px;
-}
-
 .nav-right .menu li:nth-of-type(5) .dropdown {
     width: 242px;
     height: 138px;
@@ -168,7 +161,6 @@ header {
 
 .nav-right .menu li:nth-of-type(2):hover .dropdown,
 .nav-right .menu li:nth-of-type(3):hover .dropdown,
-.nav-right .menu li:nth-of-type(4):hover .dropdown,
 .nav-right .menu li:nth-of-type(5):hover .dropdown {
     visibility: visible;
     opacity: 1;
@@ -360,14 +352,23 @@ header .sidebar-active {
     visibility: hidden;
     z-index: -1;
 
-    transition: all 0.3s ease, visibility 5ms, opacity 0s;
-    -webkit-transition: all 0.3s ease, visibility 5ms, opacity 0s;
-    -ms-transition: all 0.3s ease, visibility 5ms, opacity 0s;
+    transition: all 0.3s ease, visibility 5ms, opacity 0s linear;
+    -webkit-transition: all 0.3s ease, visibility 5ms, opacity 0s linear;
+    -ms-transition: all 0.3s ease, visibility 5ms, opacity 0s linear;
+}
+
+.mobile-cat a {
+    cursor: pointer;
 }
 
 .mobile-menu-dropdown a {
     font-size: 12px;
     color: rgb(17, 17, 17, 0.6);
+    transform: translate(120%, 0%);
+}
+
+.mobile-menu .mobile-cat:nth-of-type(3) .mobile-menu-dropdown a {
+    transform: translate(120%, 250%);
 }
 
 .mobile-menu-dropdown a:hover {
@@ -382,9 +383,13 @@ header .sidebar-active {
     visibility: visible;
     z-index: 0;
 
-    transition: all 0.3s ease, visibility 5ms, opacity 0s;
-    -webkit-transition: all 0.3s ease, visibility 5ms, opacity 0s;
-    -ms-transition: all 0.3s ease, visibility 5ms, opacity 0s;
+    transition: all 0.3s ease, visibility 5ms, opacity 0s linear;
+    -webkit-transition: all 0.3s ease, visibility 5ms, opacity 0s linear;
+    -ms-transition: all 0.3s ease, visibility 5ms, opacity 0s linear;
+}
+
+.mobile-sidebar .mobile-menu li .open a {
+    transform: translate(0%, 0%) !important;
 }
 
 .mobile-lang-switcher {
@@ -593,7 +598,6 @@ footer hr {
     border-top: 4px solid rgb(51, 76, 101, 0);
     border-radius: 2px;
     padding-top: 41px;
-    transition: all 0.5s ease-in-out;
 }
 
 .footer-cont .footer-menu li:hover a {
