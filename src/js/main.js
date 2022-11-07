@@ -56,3 +56,47 @@ function isLangSwitcherOpen() {
   }
   return;
 }
+
+//If on artGallery page swiper
+if (document.getElementById("artGallery")) {
+  const gallerySwiper = new Swiper(".mySwiper", {
+    spaceBetween: 18,
+    loop: true,
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 18,
+      },
+
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 18,
+      },
+
+      1000: {
+        slidesPerView: 4,
+        spaceBetween: 18,
+      },
+
+      1225: {
+        slidesPerView: 5,
+        spaceBetween: 18,
+      },
+
+      1500: {
+        slidesPerView: 6,
+        spaceBetween: 18,
+      },
+    },
+  });
+}
