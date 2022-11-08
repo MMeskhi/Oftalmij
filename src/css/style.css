@@ -66,6 +66,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 45px;
 
     position: relative;
 }
@@ -806,12 +807,14 @@ footer .footer-bottom span {
     flex-direction: column;
     justify-content: center;
     gap: 12px;
-    width: 347px;
+    max-width: 347px;
+    min-width: 232px;
+    width: 100%;
     height: 87px;
     background-color: rgba(41, 155, 175, 0.05);
     border: 1px solid rgba(41, 155, 175, 0.1);
     border-radius: 12px;
-    padding: 0px 0 0 24px;
+    padding: 0px 24px 0 24px;
 }
 
 .branch-grid span {
@@ -1197,6 +1200,10 @@ input:focus {
 
 .contact-send button:hover {
     opacity: 90%;
+}
+
+.contact-warning {
+    margin-top: 10px;
 }
 
 

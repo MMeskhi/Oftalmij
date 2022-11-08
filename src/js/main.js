@@ -126,6 +126,60 @@ if (document.getElementById("branches")) {
   branchHoverGurjani.addEventListener("mouseout", selectBranchH, false);
 }
 
+//Contact from
+const contactWarning = document.querySelector(".contact-warning");
+const contactSubmit = document.getElementById("contactSubmit");
+
+const userForm = document.getElementById("contactForm");
+const userName = document.getElementById("userName");
+const userLastName = document.getElementById("userLastName");
+const userEmail = document.getElementById("userEmail");
+const userPhone = document.getElementById("userPhone");
+const userMessage = document.getElementById("userMessage");
+
+userForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const userData = {
+    name: userName.value,
+    lastName: userLastName.value,
+    email: userEmail.value,
+    phone: userPhone.value,
+    message: userMessage.value,
+  };
+  console.log(userData);
+  formData(userData);
+});
+
+function formData(userData) {
+  fetch("http://oftalmij.com/ka/contact/", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify(userData),
+  })
+    .then(async (response) => {
+      if (response.status == 200) {
+        contactWarning.innerHTML = "მესიჯი წარმატებით გაიგზავნა.";
+        userForm.style.pointerEvents = "none";
+      }
+      return response.json();
+    })
+    .catch((error) => {
+      contactWarning.innerHTML = "მოხდა შეცდომა!";
+      console.log(error);
+    })
+    .then((data) => {
+      console.log(data);
+      setTimeout(() => {
+        userForm.reset();
+        userForm.style.pointerEvents = "";
+        contactWarning.innerHTML = "";
+      }, 10000);
+    });
+}
+
 //If on artGallery page swiper
 if (document.getElementById("artGallery")) {
   const gallerySwiper = new Swiper(".mySwiper", {
