@@ -24,7 +24,7 @@
     <title>ფილიალები</title>
 </head>
 
-<body>
+<body id="branches">
     <header>
         <nav class="navbar container">
             <div class="nav-left">
@@ -149,35 +149,35 @@
         <div class="branches-cont">
             <div class="branches-left">
                 <div class="branches-grid">
-                    <div class="branch-grid">
+                    <div class="branch-grid" id="kut">
                         <span class="branch-loc">ქუთაისი, ირ.აბაშიძის გამზ #12</span>
                         <a href="tel:431 27 49 16">ტელ: (431) 274916</a>
                     </div>
-                    <div class="branch-grid">
+                    <div class="branch-grid" id="gurj">
                         <span class="branch-loc">გურჯაანი, კოსტავას ქ #26</span>
                         <a href="tel:431 27 49 16">ტელ: (431) 274916</a>
                     </div>
-                    <div class="branch-grid">
+                    <div class="branch-grid" id="tela">
                         <span class="branch-loc">თელავი, აღმაშენებლის ქ # 43</span>
                         <a href="tel:431 27 49 16">ტელ: (431) 274916</a>
                     </div>
-                    <div class="branch-grid">
+                    <div class="branch-grid" id="tbil">
                         <span class="branch-loc">გლდანი, ვეკუას ქ #12</span>
                         <a href="tel:431 27 49 16">ტელ: (431) 274916</a>
                     </div>
-                    <div class="branch-grid">
+                    <div class="branch-grid" id="gori">
                         <span class="branch-loc">გორი, სუხიშვილის ქ # 12</span>
                         <a href="tel:431 27 49 16">ტელ: (431) 274916</a>
                     </div>
-                    <div class="branch-grid">
+                    <div class="branch-grid" id="marn">
                         <span class="branch-loc">მარნეული, 26 მაისის ქ # 80</span>
                         <a href="tel:431 27 49 16">ტელ: (431) 274916</a>
                     </div>
-                    <div class="branch-grid">
+                    <div class="branch-grid" id="rust">
                         <span class="branch-loc">რუსთავი, მესხიშვილის ქ #12</span>
                         <a href="tel:431 27 49 16">ტელ: (431) 274916</a>
                     </div>
-                    <div class="branch-grid">
+                    <div class="branch-grid" id="zug">
                         <span class="branch-loc">ზუგდიდი, გამსახურდიას 211</span>
                         <a href="tel:431 27 49 16">ტელ: (431) 274916</a>
                     </div>
@@ -190,7 +190,16 @@
                 </div>
             </div>
             <div class="branches-right">
-                <div class="branches-map"></div>
+                <div class="branches-map">
+                    <div class="map-hover zugdidi"></div>
+                    <div class="map-hover kutaisi"></div>
+                    <div class="map-hover gori"></div>
+                    <div class="map-hover telavi"></div>
+                    <div class="map-hover tbilisi"></div>
+                    <div class="map-hover marneuli"></div>
+                    <div class="map-hover rustavi"></div>
+                    <div class="map-hover gurjani"></div>
+                </div>
             </div>
         </div>
     </main>

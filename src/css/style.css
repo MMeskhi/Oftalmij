@@ -857,13 +857,66 @@ footer .footer-bottom span {
 }
 
 .branches-map {
-    max-width: 708px;
-    width: 100%;
+    width: 708px;
     height: 362px;
     background-image: url(../img/ka_map.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+
+    position: relative;
+}
+
+.map-hover {
+    position: relative;
+
+    height: 29px;
+    width: 83px;
+    cursor: pointer;
+}
+
+.branch-selected {
+    background-color: rgba(41, 155, 175, 1);
+}
+
+.zugdidi {
+    left: 133px;
+    top: 93px;
+}
+
+.kutaisi {
+    left: 222px;
+    top: 102px;
+}
+
+.gori {
+    left: 396px;
+    top: 131px;
+}
+
+.telavi {
+    left: 477px;
+    top: 73px;
+}
+
+.tbilisi {
+    left: 441px;
+    top: 118px;
+}
+
+.marneuli {
+    left: 418px;
+    top: 128px;
+}
+
+.rustavi {
+    left: 498px;
+    top: 87px;
+}
+
+.gurjani {
+    left: 527px;
+    top: 3px;
 }
 
 

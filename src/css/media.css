@@ -332,6 +332,20 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 1fr);
     }
+
+
+    .footer-cont .footer-menu li a {
+        padding-top: 0px;
+    }
+
+    .branches-map {
+        max-width: 708px;
+        width: 100%;
+    }
+
+    .map-hover {
+        display: none;
+    }
 }
 
 @media all and (max-width: 480px) {
