@@ -868,7 +868,7 @@ footer .footer-bottom span {
 }
 
 .map-hover {
-    position: relative;
+    position: absolute;
 
     height: 29px;
     width: 83px;
@@ -880,43 +880,43 @@ footer .footer-bottom span {
 }
 
 .zugdidi {
-    left: 133px;
-    top: 93px;
+    left: 131px;
+    top: 91px;
 }
 
 .kutaisi {
-    left: 222px;
-    top: 102px;
+    left: 223px;
+    top: 131px;
 }
 
 .gori {
     left: 396px;
-    top: 131px;
+    top: 189px;
 }
 
 .telavi {
     left: 477px;
-    top: 73px;
+    top: 160px;
 }
 
 .tbilisi {
     left: 441px;
-    top: 118px;
+    top: 234px;
 }
 
 .marneuli {
     left: 418px;
-    top: 128px;
+    top: 273px;
 }
 
 .rustavi {
     left: 498px;
-    top: 87px;
+    top: 259px;
 }
 
 .gurjani {
-    left: 527px;
-    top: 3px;
+    left: 529px;
+    top: 206px;
 }
 
 

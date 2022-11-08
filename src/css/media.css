@@ -386,7 +386,11 @@
     }
 
     .branches-right {
-        margin-top: -20px;
+        margin-top: 20px;
+    }
+
+    .branches-map {
+        height: 175px;
     }
 
     .branches h4 {
