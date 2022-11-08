@@ -961,7 +961,7 @@ footer .footer-bottom span {
 
 .therapy-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 0fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 16px;
     grid-auto-flow: row;
@@ -1275,10 +1275,7 @@ input:focus {
     box-shadow: 0px 0px 20px #597DBC1A;
     border: 1px solid #E7E7E733;
     border-radius: 50%;
-    cursor: pointer;
-    z-index: 1;
-
-    position: absolute;
+    z-index: 2 !important;
 }
 
 .gallery .swiper-button-next {
