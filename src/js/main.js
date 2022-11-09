@@ -137,18 +137,20 @@ const userEmail = document.getElementById("userEmail");
 const userPhone = document.getElementById("userPhone");
 const userMessage = document.getElementById("userMessage");
 
-userForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const userData = {
-    name: userName.value,
-    lastName: userLastName.value,
-    email: userEmail.value,
-    phone: userPhone.value,
-    message: userMessage.value,
-  };
-  console.log(userData);
-  formData(userData);
-});
+if (document.getElementById("contact")) {
+  userForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const userData = {
+      name: userName.value,
+      lastName: userLastName.value,
+      email: userEmail.value,
+      phone: userPhone.value,
+      message: userMessage.value,
+    };
+    console.log(userData);
+    formData(userData);
+  });
+}
 
 function formData(userData) {
   fetch("http://oftalmij.com/ka/contact/", {
