@@ -474,9 +474,27 @@ header .sidebar-active {
     line-height: 0;
 }
 
+.main-sect-cont span {
+    line-height: 1.5;
+    text-align: center;
+}
+
+.main-sect-cont .main-sect {
+    max-width: 360px;
+    width: 100%;
+}
+
+.main-sect-cont .main-sect:hover {
+    filter: grayscale(50%);
+}
+
+.main-sect-cont .main-sect:hover span {
+    opacity: 0.7;
+}
+
 .main-sect-cont .main-sect img {
     height: 229px;
-    width: 360px;
+    width: 100%;
 }
 
 .main-sect-cont .main-sect div {
