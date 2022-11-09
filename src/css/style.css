@@ -260,8 +260,16 @@ header {
     margin-top: 55px;
 }
 
+.nav-right .lang-active a {
+    pointer-events: unset !important;
+}
+
 .nav-right .lang-swt .swt-active {
     display: flex;
+}
+
+.nav-right .lang-swt a {
+    pointer-events: none;
 }
 
 .nav-right .lang-swt a:hover {
@@ -817,7 +825,7 @@ footer .footer-bottom span {
     padding: 0px 24px 0 24px;
 }
 
-.branch-grid span {
+.branch-grid a:nth-of-type(1) {
     font-size: 16px;
     color: rgba(0, 0, 0, 0.9);
 }
