@@ -447,7 +447,7 @@
         width: 100%;
     }
 
-    .swiper-slide-active #overlay {
+    .overlay {
         display: none;
     }
 }

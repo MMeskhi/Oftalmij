@@ -70,6 +70,23 @@ mapBranches.forEach((pin, index) => {
   });
 });
 
+//Art gallery selector
+const gallerySelector = document.querySelectorAll(".gallery-selector");
+
+gallerySelector.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const parentSlide = btn.closest(".swiper-slide");
+    const gallery = parentSlide.querySelector(".gallery-selector");
+    const changeGallery = (active) => {
+      for (let i = 0; i < gallery.length; i++) {
+        gallery[i].classList.remove("active");
+      }
+      active.classList.add("active");
+    };
+    changeGallery(btn);
+  });
+});
+
 //Contact from
 const contactWarning = document.querySelector(".contact-warning");
 const contactSubmit = document.getElementById("contactSubmit");
