@@ -59,7 +59,7 @@ function isLangSwitcherOpen() {
 
 // Map hover
 const branchesBlocks = document.querySelectorAll(".branch-grid");
-const mapBranches = document.querySelectorAll(".map-hover ");
+const mapBranches = document.querySelectorAll(".map-hover");
 
 mapBranches.forEach((pin, index) => {
   pin.addEventListener("mouseover", () => {
@@ -84,6 +84,21 @@ gallerySelector.forEach((btn) => {
       active.classList.add("active");
     };
     changeGallery(btn);
+  });
+});
+
+const galleryGrid = document.querySelectorAll(".gallery-grid");
+
+gallerySelector.forEach((pin, index) => {
+  pin.addEventListener("click", () => {
+    galleryGrid[index].classList.toggle("gallery-active");
+    // const changeGallery = (active) => {
+    //   for (let i = 0; i < galleryGrid.length; i++) {
+    //     galleryGrid[i].classList.remove("gallery-active");
+    //   }
+    //   active.classList.add("gallery-active");
+    // };
+    // changeGallery(pin);
   });
 });
 
