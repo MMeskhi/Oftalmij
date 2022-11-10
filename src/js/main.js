@@ -73,13 +73,11 @@ mapBranches.forEach((pin, index) => {
 //Art gallery selector
 const gallerySelector = document.querySelectorAll(".gallery-selector");
 
-gallerySelector.forEach((btn) => {
+gallerySelector.forEach((btn, index) => {
   btn.addEventListener("click", () => {
-    const parentSlide = btn.closest(".swiper-slide");
-    const gallery = parentSlide.querySelector(".gallery-selector");
     const changeGallery = (active) => {
-      for (let i = 0; i < gallery.length; i++) {
-        gallery[i].classList.remove("active");
+      for (let i = 0; i < gallerySelector.length; i++) {
+        gallerySelector[i].classList.remove("active");
       }
       active.classList.add("active");
     };
@@ -89,16 +87,14 @@ gallerySelector.forEach((btn) => {
 
 const galleryGrid = document.querySelectorAll(".gallery-grid");
 
-gallerySelector.forEach((pin, index) => {
-  pin.addEventListener("click", () => {
-    galleryGrid[index].classList.toggle("gallery-active");
-    // const changeGallery = (active) => {
-    //   for (let i = 0; i < galleryGrid.length; i++) {
-    //     galleryGrid[i].classList.remove("gallery-active");
-    //   }
-    //   active.classList.add("gallery-active");
-    // };
-    // changeGallery(pin);
+gallerySelector.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    for (let i = 0; i < gallerySelector.length; i++) {
+      galleryGrid[i].classList.remove("gallery-active");
+      gallerySelector[i].classList.remove("active");
+    }
+    galleryGrid[index].classList.add("gallery-active");
+    gallerySelector[index].classList.add("active");
   });
 });
 
@@ -162,7 +158,6 @@ function formData(userData) {
 if (document.getElementById("artGallery")) {
   const gallerySwiper = new Swiper(".mySwiper", {
     spaceBetween: 18,
-    loop: true,
 
     navigation: {
       nextEl: ".swiper-button-next",

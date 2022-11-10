@@ -101,10 +101,6 @@ header {
     transition: all 0.9s ease-in-out;
 }
 
-.nav-left:hover span {
-    color: #299BAF
-}
-
 .navbar .nav-right ul {
     font-size: 14px;
     background-color: rgb(41, 155, 175, 0.05);
@@ -527,14 +523,25 @@ header .sidebar-active {
     align-items: center;
 }
 
-.abt-cont, .glr-cont {
+.abt-top, .glr-bottom {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 auto;
     height: 600px;
-    width: 50%;
-    padding: 100px;
+}
+
+.abt-top {
+    align-items: flex-start;
+}
+
+.abt-top,
+.glr-bottom {
+    max-width: 470px;
+    width: 100%;
+}
+
+.glr-bottom {
+    align-items: flex-end;
 }
 
 .abt .heading {
@@ -584,11 +591,28 @@ header .sidebar-active {
     gap: 10px;
 }
 
+.abt,
+.glr {
+    position: relative;
+}
+
 .abt .sect-bg,
 .glr .sect-bg {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: absolute;
+    height: 710px;
+}
+
+.abt .sect-bg {
+    top: 0;
+    right: 0;
+}
+
+.glr .sect-bg {
+    top: 0;
+    left: 0;
 }
 
 .abt .sect-bg {
@@ -601,6 +625,17 @@ header .sidebar-active {
     background-image: url(../img/glr-img.png);
     width: 50%;
     height: 712px;
+}
+
+.abt-cont {
+    margin-bottom: 110px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.glr-cont {
+    display: flex;
+    justify-content: flex-end;
 }
 
 
@@ -1311,6 +1346,10 @@ input:focus {
     z-index: 2 !important;
 }
 
+.swiper-button-lock {
+    display: flex !important;
+}
+
 .gallery .swiper-button-next {
     top: 19%;
     right: 0;
@@ -1339,9 +1378,18 @@ input:focus {
     width: 225px;
 }
 
+.swiper-slide .gallery-selector {
+    cursor: pointer;
+}
+
+.swiper-slide .gallery-selector:hover {
+    opacity: 0.9;
+}
+
 .swiper-slide .title {
     font-size: 14px;
     text-align: start;
+    font-weight: normal;
     color: rgba(0, 0, 0, 0.9);
     width: 220px;
 }
