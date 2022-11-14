@@ -166,7 +166,8 @@ if (document.getElementById("artGallery")) {
 
     breakpoints: {
       320: {
-        slidesPerView: 1,
+        slidesPerView: 1.6,
+        spaceBetween: 12,
       },
 
       480: {

@@ -291,6 +291,10 @@
     .map-hover {
         display: none;
     }
+
+    .swiper-button-prev:hover, .swiper-button-next:hover {
+        opacity: unset;
+    }
 }
 
 @media all and (max-width: 700px) {
@@ -461,19 +465,5 @@
     .gallery-grid {
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
-    }
-
-    .swiper-slide .gallery-selector:nth-of-type(1) {
-        height: 225px;
-        width: 100%;
-    }
-
-    .swiper-slide img {
-        height: 225px;
-        width: 100%;
-    }
-
-    .overlay {
-        display: none;
     }
 }
