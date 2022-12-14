@@ -602,7 +602,7 @@ header .sidebar-active {
     background-position: center;
     background-size: cover;
     position: absolute;
-    height: 710px;
+    height: 100%;
 }
 
 .abt .sect-bg {
@@ -618,13 +618,11 @@ header .sidebar-active {
 .abt .sect-bg {
     background-image: url(../img/abt-img.png);
     width: 50%;
-    height: 710px;
 }
 
 .glr .sect-bg {
     background-image: url(../img/glr-img.png);
     width: 50%;
-    height: 712px;
 }
 
 .abt-cont {
@@ -641,7 +639,7 @@ header .sidebar-active {
 
 /* Footer */
 footer {
-    margin-top: 160px;
+    margin-top: 80px;
 }
 
 footer hr {
